@@ -1,0 +1,73 @@
+/* This is the CSS for the LoginCard component */
+.__login_card_container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.__login_card {
+    background-color: white;
+    margin: auto;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 5px 5px 5px rgb(85, 85, 85);
+}
+
+.__login_card_logo_container {
+    height: 100px;
+    margin: 20px;
+    text-align: center;
+}
+
+.__login_card_logo_container>img {
+    height: 100%;
+    width: auto;
+}
+
+.__login_form {
+    width: 100%;
+}
+
+.__login_form_input_group {
+    margin-bottom: 8px;
+}
+
+.__login_form_input_group label {
+    display: block;
+    width: 90%;
+    margin-bottom: 3px;
+}
+
+.__login_form_input_group input {
+    display: block;
+    width: 90%;
+    margin: auto;
+    padding: 3px;
+    border: 1px solid rgb(112, 112, 112);
+    border-radius: 3px;
+}
+
+.__login_form_input_group input:focus {
+    background-color: rgb(238, 238, 238);
+    box-shadow: 0px 0px 8px rgb(90, 149, 218);
+}
+
+.__login_form_buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.__login_form_buttons button {
+    background-color: rgb(208, 230, 255);
+    padding: 3px 7px;
+    border-radius: 5px;
+    color: black;
+}
+
+.__login_form_buttons button:hover{
+    color: white;
+    background-color: rgb(95, 143, 197);
+    cursor: pointer;
+    transition-duration: 260ms;
+}
