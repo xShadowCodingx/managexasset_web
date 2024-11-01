@@ -2,10 +2,14 @@
 // This component wraps our content with the re-used components that are on every page
 
 import React from 'react'
+import Navigation from '../Navigation/Navigation'
+
+const backgroundTileURL = "url('/Background_Tile.png')"
 
 export default function Layout(props) {
   return (
-    <div>
+    <div style={{backgroundImage: backgroundTileURL}}>
+      <Navigation />
       {props.children}
     </div>
   )

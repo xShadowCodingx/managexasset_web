@@ -1,0 +1,108 @@
+/* This is the CSS for the Navigation component */
+
+/* variable declarations */
+:root {
+    --widescreen-width: 500px;
+    --medium-width: 400px;
+    --small-width: 300px;
+    --xs-width: 200px;
+}
+
+/* Larger screen sizes */
+@media screen and (min-width: 700px) {
+    .__navigation_container {
+        width: var(--widescreen-width);
+    }
+
+    .__navigation_container_show {
+        left: 0;
+        transition: 2000ms;
+    }
+
+    .__navigation_container_hide {
+        left: calc(calc(var(--widescreen-width) + 2px) * -1);
+        transition: all 1s ease-out;
+    }
+
+    .__navigation_internal_container {
+        position: relative;
+    }
+
+    .__navigation_internal_button_container {
+        position: absolute;
+        right: 0%;
+        top: 5px;
+        transform: translateX(110%);
+    }
+
+    .__navigation_internal_container button {
+        padding: 5px 10px;
+        cursor: pointer;
+        font-size: 20px;
+        background-color: rgba(52, 117, 117, 0.856);
+        color: white;
+        border: 1px solid rgb(187, 187, 187);
+        border-radius: 5px;
+    }
+
+    .__navigation_internal_container_show button {
+        transform: rotate(0deg);
+        transition: all 1s ease-out;
+    }
+
+    .__navigation_internal_container_hide button {
+        transform: rotate(180deg);
+        transition: all 1s ease-out;
+    }
+
+    .__navigation_link {
+        width: 60%;
+    }
+
+}
+
+/* Universal Styling (any screen size) */
+.__navigation_container {
+    z-index: 5;
+    height: 90vh;
+    border: 1px solid black;
+    position: absolute;
+    top: 0;
+    background-color: rgba(196, 196, 196, 0.836);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.__navigation_logo_container {
+    text-align: center;
+    padding: 50px;
+}
+
+.__navigation_logo_container img {
+    height: 100px;
+    width: auto;
+}
+
+.__navigation_link_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.__navigation_link {
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(52, 117, 117);
+    color: white;
+    margin-bottom: 10px;
+    padding: 10px 0px;
+}
+
+.__navigation_link:hover {
+    background-color: rgb(62, 131, 131);
+    transition: all 250ms ease-out;
+}
